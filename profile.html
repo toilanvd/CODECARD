@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title> CODECARD - Profile </title>	<!-- <title> used to write page's name showed on the tab -->
+		<meta name = "toilanvd" content = "webtest">	<!-- <meta> used for search engine to search the page -->
+		<!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> -->
+		<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+		<link href = "css/profile.css" rel = "stylesheet" type = "text/css">
+		<link rel="icon" type="image/png" href="media/favicon.png"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	</head>
+	
+	<body>
+		<div id="wrapper" class="wrapper">
+		<!-- <div id="wrapper" class="wrapper" onmouseout="show_background_popup()" onmouseover="hide_background_popup()"> -->
+			<img id="background" class="background" src="../media/background.jpg">
+			<img id="background-popup" class="background-popup" style="display:none;" src="../media/background_popup_index.jpg">
+
+			<div id="main" class="main">
+				<div id="header" class="header">
+					<!-- <img id="header-background" class="header-background" src="../media/header_background.jpg"> -->
+					<div id="logo" class="logo">
+						<img id="logo-image" class="logo-image" src="../media/logo_transparent.png">
+					</div>
+					<div id="welcome-message" class="welcome-message"></div>
+					<div id="home-quick" class="home-quick">
+						<a id="home-quick-link" class="home-quick-link">
+							<img id="home-quick-button" class="home-quick-button" src="../media/home_quick_button.png">
+						</a>
+					</div>
+					<div id="combat-quick" class="combat-quick">
+						<a id="combat-quick-link" class="combat-quick-link">
+							<img id="combat-quick-button" class="combat-quick-button" src="../media/combat_quick_button.png">
+						</a>
+					</div>
+					<div id="login-profile" class="login-profile">
+						<a id="login-profile-link" class="login-profile-link">
+							<img id="login-profile-button" class="login-profile-button">
+						</a>
+					</div>
+					<div id="signup-logout" class="signup-logout">
+						<a id="signup-logout-link" class="signup-logout-link">
+							<img id="signup-logout-button" class="signup-logout-button">
+						</a>
+					</div>
+				</div>
+
+				<!-- Main content -->
+				<div id="main-content" class="main-content">
+					<div id="profile-box" class="profile-box">
+						<div id="profile-title" class="profile-title">
+							<p><b><u><h1>MY PROFILE</h1></u></b></p> 
+						</div>
+						<div id="userid-frame" class="userid-frame">
+							<p style="font-size: 15pt"><span><b>Username: </b></span><span id="userid" class="userid"></span></p>
+						</div>
+						<div id="username-frame" class="username-frame">
+							<p style="font-size: 15pt"><span><b>Name: </b></span><span id="username" class="username"></span></p>
+							<form id="change-username" method="POST">
+								<input type="text" name="username" placeholder="new name">
+								<input type="submit" value="CHANGE">
+							</form>
+						</div>
+						<div id="change-password-frame" class="change-password-frame">
+							<p style="font-size: 15pt"><b>Change password:</b></p>
+							<form id="change-password" method="POST">
+								<p><input type="password" name="current_password" placeholder="current password"></p>
+								<p><input type="password" name="password" placeholder="new password"></p>
+								<p><input type="password" name="re_password" placeholder="retype new password"></p>
+								<p><input type="submit" value="CHANGE PASSWORD"></p>
+							</form>
+						</div>
+					</div>
+				</div>
+				<!-- End of main content -->
+
+			</div>
+		</div>
+
+		<script src="js/html/profile.js"></script>
+	</body>
+
+</html>
+

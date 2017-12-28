@@ -1,0 +1,15 @@
+<--- Last few GCs --->
+
+   38604 ms: Mark-sweep 20.4 (53.9) -> 14.8 (53.9) MB, 6.8 / 0 ms (+ 17.3 ms in 209 steps since start of marking, biggest step 0.2 ms) [GC interrupt] [GC in old space requested].
+   38638 ms: Scavenge 17.1 (53.9) -> 15.9 (53.9) MB, 2.6 / 0 ms [allocation failure].
+   38676 ms: Scavenge 18.7 (53.9) -> 16.6 (53.9) MB, 3.3 / 0 ms [allocation failure].
+   55078 ms: Scavenge 24.8 (54.9) -> 18.2 (54.9) MB, 2.3 / 0 ms (+ 7.1 ms in 60 steps since last GC) [allocation failure].
+
+
+<--- JS stacktrace --->
+
+==== JS stack trace =========================================
+
+Security context: 0x37f0e33b4629 <JS Object>
+    1: parseurl(aka parseurl) [/home/ubuntu/CODECARD/node_modules/parseurl/index.js:~40] [pc=0x15abb204f1d1] (this=0x37f0e33041b9 <undefined>,req=0x1446711fee29 <an IncomingMessage with map 0x206529e9bad9>)
+    2: getPathname(aka getPathname) [/home/ubuntu/CODECARD/node_modules/express/lib/router/index.js:528] [pc=0x15abb1f98ad4] (this=0x37f0e33041b9 <undefined>,req=0x1446711fee29 <an IncomingM...

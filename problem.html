@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title> CODECARD </title>	<!-- <title> used to write page's name showed on the tab -->
+		<meta name = "toilanvd" content = "webtest">	<!-- <meta> used for search engine to search the page -->
+		<!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> -->
+		<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+		<link href = "../css/problem.css" rel = "stylesheet" type = "text/css">
+		<link rel="icon" type="image/png" href="../media/favicon.png"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	</head>
+	
+	<body>
+		<div id="wrapper" class="wrapper">
+		<!-- <div id="wrapper" class="wrapper" onmouseout="show_background_popup()" onmouseover="hide_background_popup()"> -->
+			<img id="background" class="background" src="../media/background.jpg">
+			<img id="background-popup" class="background-popup" style="display:none;" src="../media/background_popup_index.jpg">
+
+			<div id="main" class="main">
+				<div id="header" class="header">
+					<!-- <img id="header-background" class="header-background" src="../media/header_background.jpg"> -->
+					<div id="logo" class="logo">
+						<img id="logo-image" class="logo-image" src="../media/logo_transparent.png">
+					</div>
+					<div id="welcome-message" class="welcome-message"></div>
+					<div id="home-quick" class="home-quick">
+						<a id="home-quick-link" class="home-quick-link">
+							<img id="home-quick-button" class="home-quick-button" src="../media/home_quick_button.png">
+						</a>
+					</div>
+					<div id="combat-quick" class="combat-quick">
+						<a id="combat-quick-link" class="combat-quick-link">
+							<img id="combat-quick-button" class="combat-quick-button" src="../media/combat_quick_button.png">
+						</a>
+					</div>
+					<div id="login-profile" class="login-profile">
+						<a id="login-profile-link" class="login-profile-link">
+							<img id="login-profile-button" class="login-profile-button">
+						</a>
+					</div>
+					<div id="signup-logout" class="signup-logout">
+						<a id="signup-logout-link" class="signup-logout-link">
+							<img id="signup-logout-button" class="signup-logout-button">
+						</a>
+					</div>
+				</div>
+
+				<!-- Main content -->
+				<div id="main-content" class="main-content">
+					<div id="problem-document-and-ranking" class="problem-document-and-ranking">
+						<div id="problem-document" class="problem-document">
+							<!-- Content of this div will be load by script below -->
+						</div>
+
+						<div id="problem-ranking" class="problem-ranking">
+							<div id="problem-ranking-title" class="problem-ranking-title">
+								<p><b><u>USER WHO TRIED THIS PROBLEM:</u></b></p>
+							</div>
+							<div id="problem-ranking-content" class="problem-ranking-content"></div>
+							<!-- Content of this div will be load by script below -->
+						</div>
+					</div>
+					
+					<!-- **************************************************** -->
+
+					<div id="problem-information" class="problem-information">
+						<img id="problem-information-frame" class="problem-information-frame" src="../media/noncombat_probleminfo_frame.png">
+						<div id="problem-information-content" class="problem-information-content">
+							<div id="scoring-and-download-test" class="scoring-and-download-test">
+								<div id="problem-name-and-level" class="problem-name-and-level"></div>
+								<div id="timelimit-and-memlimit" class="timelimit-and-memlimit"></div>
+								<div id="current-result"></div>
+								<div id="max-result"></div>
+								<div id="problem-source"></div>
+								<div id="function-buttons" class="function-buttons">
+									<div id="download-test" class="download-test"></div>
+									<div id="download-solution" class="download-solution"></div>
+									<div id="receive-gift" class="receive-gift"></div>
+								</div>
+
+							</div>
+
+							<div id="grading" class="grading">
+								<div id="grading-status" class="grading-status"></div>
+								<!-- <button class="reload-status-button" onclick="reload_status()">RELOAD STATUS</button> -->
+
+								<a id="download-grading-log" download>Download grading log</a>
+
+								<div class="grading-and-sources">
+									<textarea id="grading-log" class="grading-log" disabled></textarea>
+									<div id="sources-and-results" class="sources-and-results"></div>
+								</div>
+							</div>
+
+							<div id="code-submitting" class="code-submitting">
+								<p><b>SUBMIT CODE:</b></p>
+
+								<form id="submit-code" method="post">
+									<textarea name="source_code" class="code-box" placeholder="Write your code here..." required autofocus></textarea>
+									<div>
+										Language:
+										<select name="language">
+											<option value="cpp">C++</option>
+											<option value="pas">Pascal</option>
+										</select>
+										<input type="submit" value="Submit" class="submit-code-button">
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End of main content -->
+
+			</div>
+		</div>
+
+		<script src="../js/html/problem.js"></script>
+	</body>
+
+</html>
+

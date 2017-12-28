@@ -1,0 +1,269 @@
++-----------+--------------+-------+-----------+------------------+---------------+---------------+
+| problemid | type         | level | algorithm | source           | free_solution | free_testdata |
++-----------+--------------+-------+-----------+------------------+---------------+---------------+
+| 3NPLUS1   | algotraining |     1 |         1 | UVA              |             0 |             0 |
+| ABVEAVG   | algotraining |     1 |         1 | UVA              |             0 |             0 |
+| GAMES     | algotraining |     1 |         1 | Codeforces       |             0 |             0 |
+| COMPOTE   | algotraining |     1 |         2 | Codeforces       |             0 |             0 |
+| THEASQR   | algotraining |     1 |         2 | Codeforces       |             0 |             0 |
+| YNUMSEQ   | algotraining |     1 |         2 | UVA              |             0 |             0 |
+| ECOBIN    | algotraining |     1 |         3 | UVA              |             0 |             0 |
+| GRIDGME   | algotraining |     1 |         3 | UVA              |             0 |             0 |
+| YOKOF     | algotraining |     2 |         3 | SPOJ             |             0 |             0 |
+| CBUYING   | algotraining |     1 |         4 | VNSPOJ           |             0 |             0 |
+| MJURNEY   | algotraining |     1 |         4 | VNSPOJ           |             0 |             0 |
+| NOIXICH   | algotraining |     1 |         4 | VNSPOJ           |             0 |             0 |
+| MINK      | algotraining |     1 |         5 | VNSPOJ           |             0 |             0 |
+| QBRECT    | algotraining |     1 |         5 | VNSPOJ           |             0 |             0 |
+| C11PAIR   | algotraining |     2 |         5 | VNSPOJ           |             0 |             0 |
+| BIGNUM    | algotraining |     1 |         6 | VNSPOJ           |             0 |             0 |
+| HELPBRO   | algotraining |     1 |         6 | UVA              |             0 |             0 |
+| PBCDEM    | algotraining |     1 |         6 | VNSPOJ           |             0 |             0 |
+| CHOCO     | algotraining |     1 |         7 | Codeforces       |             0 |             0 |
+| KOLYA     | algotraining |     1 |         7 | Codeforces       |             0 |             0 |
+| PASHA     | algotraining |     1 |         7 | Codeforces       |             0 |             0 |
+| FEDYA     | algotraining |     1 |         8 | Codeforces       |             0 |             0 |
+| LCMCHAL   | algotraining |     1 |         8 | Codeforces       |             0 |             0 |
+| TOYARMY   | algotraining |     1 |         8 | Codeforces       |             0 |             0 |
+| LIS       | algotraining |     1 |         9 | VNSPOJ           |             0 |             0 |
+| MTWALK    | algotraining |     1 |         9 | VNSPOJ           |             0 |             0 |
+| NNOD      | algotraining |     1 |         9 | UVA              |             0 |             0 |
+| ENEWEAK   | algotraining |     1 |        10 | Codeforces       |             0 |             0 |
+| TREECON   | algotraining |     1 |        10 | Codeforces       |             0 |             0 |
+| LORENZO   | algotraining |     2 |        10 | Codeforces       |             0 |             0 |
+| DARTHVA   | algotraining |     2 |        11 | Codeforces       |             0 |             0 |
+| ONCEAGA   | algotraining |     2 |        11 | Codeforces       |             0 |             0 |
+| AXELMAR   | algotraining |     3 |        11 | Codeforces       |             0 |             0 |
+| COWGIRL   | algotraining |     1 |        12 | VNSPOJ           |             0 |             0 |
+| CTNBULL   | algotraining |     1 |        12 | VNSPOJ           |             0 |             0 |
+| FINDNUM   | algotraining |     1 |        12 | Codeforces       |             0 |             0 |
+| MINSTR    | algotraining |     1 |        13 | Codeforces       |             0 |             0 |
+| PALCHAR   | algotraining |     1 |        13 | Codeforces       |             0 |             0 |
+| DEBUG     | algotraining |     2 |        13 | COCI 06-07 #1    |             0 |             0 |
+| BRACKET   | algotraining |     1 |        14 | Codeforces       |             0 |             0 |
+| POINTS    | algotraining |     2 |        14 | Codeforces       |             0 |             0 |
+| COLLAPS   | algotraining |     3 |        14 | Codeforces       |             0 |             0 |
+| ORDERST   | algotraining |     1 |        15 | VNSPOJ           |             0 |             0 |
+| CARDSHF   | algotraining |     2 |        15 | VNSPOJ           |             0 |             0 |
+| GSS6      | algotraining |     2 |        15 | SPOJ             |             0 |             0 |
+| LCA       | algotraining |     1 |        16 | SPOJ             |             0 |             0 |
+| LUBENIC   | algotraining |     1 |        16 | VNSPOJ           |             0 |             0 |
+| FREQVAL   | algotraining |     2 |        16 | UVA              |             0 |             0 |
+| BEARFRI   | algotraining |     1 |        17 | Codeforces       |             0 |             0 |
+| PERISHA   | algotraining |     1 |        17 | Codeforces       |             0 |             0 |
+| TAGGAME   | algotraining |     1 |        17 | Codeforces       |             0 |             0 |
+| PARITY    | algotraining |     1 |        18 | Codeforces       |             0 |             0 |
+| SPIDER    | algotraining |     1 |        18 | Codeforces       |             0 |             0 |
+| WEIRD     | algotraining |     1 |        18 | Codeforces       |             0 |             0 |
+| IGORWAY   | algotraining |     1 |        19 | Codeforces       |             0 |             0 |
+| TRAILS    | algotraining |     1 |        19 | SWERC 14         |             0 |             0 |
+| DISTRIA   | algotraining |     3 |        19 | NEERC 15-16      |             0 |             0 |
+| ARRAYOP   | algotraining |     1 |        20 | Codeforces       |             0 |             0 |
+| BOOKCLB   | algotraining |     1 |        20 | SWERC 14         |             0 |             0 |
+| GEORGE    | algotraining |     1 |        20 | Codeforces       |             0 |             0 |
+| BLDSTR    | algotraining |     2 |        21 | Codeforces       |             0 |             0 |
+| CIELDUE   | algotraining |     2 |        21 | Codeforces       |             0 |             0 |
+| LANDSCA   | algotraining |     3 |        21 | SWERC 15         |             0 |             0 |
+| ABBREVI   | combat       |     1 |      NULL | NEERC 16-17      |             0 |             0 |
+| AVOGADR   | combat       |     1 |      NULL | COCI             |             0 |             0 |
+| BALNEED   | combat       |     1 |      NULL | SWERC 16         |             0 |             0 |
+| CANDLE    | combat       |     1 |      NULL | SWERC 16         |             0 |             0 |
+| DEJAVU    | combat       |     1 |      NULL | COCI             |             0 |             0 |
+| FILTER    | combat       |     1 |      NULL | NEERC 14-15      |             0 |             0 |
+| FREEWEI   | combat       |     1 |      NULL | NWERC 16         |             0 |             0 |
+| GENERAT   | combat       |     1 |      NULL | NEERC 15-16      |             0 |             0 |
+| GEORGE2   | combat       |     1 |      NULL | COCI             |             0 |             0 |
+| HAMILTO   | combat       |     1 |      NULL | NWERC 16         |             0 |             0 |
+| JEZ       | combat       |     1 |      NULL | COCI             |             0 |             0 |
+| KAMEN     | combat       |     1 |      NULL | COCI             |             0 |             0 |
+| KNOCKRC   | combat       |     1 |      NULL | NEERC 14-15      |             0 |             0 |
+| LIGA      | combat       |     1 |      NULL | COCI             |             0 |             0 |
+| LUBE      | combat       |     1 |      NULL | COCI             |             0 |             0 |
+| MALI      | combat       |     1 |      NULL | COCI             |             0 |             0 |
+| MATRICA   | combat       |     1 |      NULL | COCI             |             0 |             0 |
+| MUZICAR   | combat       |     1 |      NULL | COCI             |             0 |             0 |
+| OGRADA    | combat       |     1 |      NULL | COCI             |             0 |             0 |
+| PASCAL    | combat       |     1 |      NULL | SWERC 16         |             0 |             0 |
+| PERFORM   | combat       |     1 |      NULL | SWERC 16         |             0 |             0 |
+| RAZGOVO   | combat       |     1 |      NULL | COCI             |             0 |             0 |
+| SJECIST   | combat       |     1 |      NULL | COCI             |             0 |             0 |
+| SVADA     | combat       |     1 |      NULL | COCI             |             0 |             0 |
+| TABLICA   | combat       |     1 |      NULL | COCI             |             0 |             0 |
+| TURBO     | combat       |     1 |      NULL | COCI             |             0 |             0 |
+| VUK       | combat       |     1 |      NULL | COCI             |             0 |             0 |
+| ZAPIS     | combat       |     1 |      NULL | COCI             |             0 |             0 |
+| ZBRKA     | combat       |     1 |      NULL | COCI             |             0 |             0 |
+| ZUMA      | combat       |     1 |      NULL | COCI             |             0 |             0 |
+| BICIKLI   | combat       |     2 |      NULL | COCI             |             0 |             0 |
+| BRIBING   | combat       |     2 |      NULL | SWERC 16         |             0 |             0 |
+| BST       | combat       |     2 |      NULL | COCI             |             0 |             0 |
+| CIRCLE    | combat       |     2 |      NULL | COCI             |             0 |             0 |
+| CUDAK     | combat       |     2 |      NULL | COCI             |             0 |             0 |
+| DOSTAVA   | combat       |     2 |      NULL | COCI             |             0 |             0 |
+| EXPECT    | combat       |     2 |      NULL | NEERC 16-17      |             0 |             0 |
+| FIREFLY   | combat       |     2 |      NULL | COCI             |             0 |             0 |
+| GENIJA    | combat       |     2 |      NULL | COCI             |             0 |             0 |
+| IMPROVE   | combat       |     2 |      NULL | NEERC 14-15      |             0 |             0 |
+| IRONCOA   | combat       |     2 |      NULL | NWERC 16         |             0 |             0 |
+| IVANA     | combat       |     2 |      NULL | COCI             |             0 |             0 |
+| JENGA     | combat       |     2 |      NULL | NEERC 16-17      |             0 |             0 |
+| JUPITER   | combat       |     2 |      NULL | NWERC 16         |             0 |             0 |
+| KABOOM    | combat       |     2 |      NULL | COCI             |             0 |             0 |
+| LANDSIM   | combat       |     2 |      NULL | NEERC 15-16      |             0 |             0 |
+| PASSWRD   | combat       |     2 |      NULL | SWERC 16         |             0 |             0 |
+| PATULCI   | combat       |     2 |      NULL | COCI             |             0 |             0 |
+| PRINCEZ   | combat       |     2 |      NULL | COCI             |             0 |             0 |
+| PROGRAM   | combat       |     2 |      NULL | COCI             |             0 |             0 |
+| RELJEF    | combat       |     2 |      NULL | COCI             |             0 |             0 |
+| SETNJA    | combat       |     2 |      NULL | COCI             |             0 |             0 |
+| SKAKAVA   | combat       |     2 |      NULL | COCI             |             0 |             0 |
+| SREDNJI   | combat       |     2 |      NULL | COCI             |             0 |             0 |
+| STJOHN    | combat       |     2 |      NULL | SWERC 15         |             0 |             0 |
+| STOL      | combat       |     2 |      NULL | COCI             |             0 |             0 |
+| STRAZA    | combat       |     2 |      NULL | COCI             |             0 |             0 |
+| TRESNJA   | combat       |     2 |      NULL | COCI             |             0 |             0 |
+| V         | combat       |     2 |      NULL | COCI             |             0 |             0 |
+| WOODEN    | combat       |     2 |      NULL | SWERC 15         |             0 |             0 |
+| ALADIN    | combat       |     3 |      NULL | COCI             |             0 |             0 |
+| BAZA      | combat       |     3 |      NULL | COCI             |             0 |             0 |
+| BLACKVI   | combat       |     3 |      NULL | SWERC 15         |             0 |             0 |
+| BRITISH   | combat       |     3 |      NULL | NWERC 16         |             0 |             0 |
+| CACTUS    | combat       |     3 |      NULL | NEERC 15-16      |             0 |             0 |
+| CAIRO     | combat       |     3 |      NULL | SWERC 16         |             0 |             0 |
+| CESTARI   | combat       |     3 |      NULL | COCI             |             0 |             0 |
+| DVAPUT    | combat       |     3 |      NULL | COCI             |             0 |             0 |
+| GOTTA     | combat       |     3 |      NULL | NWERC 16         |             0 |             0 |
+| GRAPHGM   | combat       |     3 |      NULL | NEERC 16-17      |             0 |             0 |
+| HIGHWAY   | combat       |     3 |      NULL | NWERC 13         |             0 |             0 |
+| ISPITI    | combat       |     3 |      NULL | COCI             |             0 |             0 |
+| JETICI    | combat       |     3 |      NULL | COCI             |             0 |             0 |
+| KOCKE     | combat       |     3 |      NULL | COCI             |             0 |             0 |
+| KOLO      | combat       |     3 |      NULL | COCI             |             0 |             0 |
+| KRUSKA    | combat       |     3 |      NULL | COCI             |             0 |             0 |
+| LISTPRM   | combat       |     3 |      NULL | NEERC 16-17      |             0 |             0 |
+| LOZA      | combat       |     3 |      NULL | COCI             |             0 |             0 |
+| MOLETUN   | combat       |     3 |      NULL | NEERC 16-17      |             0 |             0 |
+| NAJKRAC   | combat       |     3 |      NULL | COCI             |             0 |             0 |
+| PALACIN   | combat       |     3 |      NULL | COCI             |             0 |             0 |
+| PASIJAN   | combat       |     3 |      NULL | COCI             |             0 |             0 |
+| PERIOD    | combat       |     3 |      NULL | COCI             |             0 |             0 |
+| PRAVOKU   | combat       |     3 |      NULL | COCI             |             0 |             0 |
+| PROSTOR   | combat       |     3 |      NULL | COCI             |             0 |             0 |
+| RABBIT    | combat       |     3 |      NULL | SWERC 16         |             0 |             0 |
+| REDOKS    | combat       |     3 |      NULL | COCI             |             0 |             0 |
+| STAZA     | combat       |     3 |      NULL | COCI             |             0 |             0 |
+| TEXTPRO   | combat       |     3 |      NULL | SWERC 15         |             0 |             0 |
+| TREZOR    | combat       |     3 |      NULL | COCI             |             0 |             0 |
+| A         | freetraining |     0 |      NULL | none             |             0 |             0 |
+| ADJUST    | freetraining |     1 |      NULL | NEERC 15-16      |             0 |             0 |
+| BANKS     | freetraining |     1 |      NULL | SEERC            |             0 |             0 |
+| BLDHOME   | freetraining |     1 |      NULL | SEERC            |             0 |             0 |
+| BOND      | freetraining |     1 |      NULL | COCI 06-07 #1    |             0 |             0 |
+| CANVAS    | freetraining |     1 |      NULL | SWERC 15         |             0 |             0 |
+| CTRLPTS   | freetraining |     1 |      NULL | SEERC            |             0 |             0 |
+| CYCLANE   | freetraining |     1 |      NULL | SEERC            |             0 |             0 |
+| DICECUP   | freetraining |     1 |      NULL | SWERC 15         |             0 |             0 |
+| EASYPRO   | freetraining |     1 |      NULL | NEERC 15-16      |             0 |             0 |
+| FC58APA   | freetraining |     1 |      NULL | Free Contest #58 |             1 |             1 |
+| FC58BIT   | freetraining |     1 |      NULL | Free Contest #58 |             1 |             1 |
+| FC58DOF   | freetraining |     1 |      NULL | Free Contest #58 |             1 |             1 |
+| FC58HAS   | freetraining |     1 |      NULL | Free Contest #58 |             1 |             1 |
+| FC58PAL   | freetraining |     1 |      NULL | Free Contest #58 |             1 |             1 |
+| FC59CAR   | freetraining |     1 |      NULL | Free Contest #59 |             1 |             1 |
+| FC59DIC   | freetraining |     1 |      NULL | Free Contest #59 |             1 |             1 |
+| FC59HAT   | freetraining |     1 |      NULL | Free Contest #59 |             1 |             1 |
+| FC59LAD   | freetraining |     1 |      NULL | Free Contest #59 |             1 |             1 |
+| FC60CNT   | freetraining |     1 |      NULL | Free Contest #60 |             1 |             1 |
+| FC60CRO   | freetraining |     1 |      NULL | Free Contest #60 |             1 |             1 |
+| FC60KEN   | freetraining |     1 |      NULL | Free Contest #60 |             1 |             1 |
+| FC60LIS   | freetraining |     1 |      NULL | Free Contest #60 |             1 |             1 |
+| FC60ZER   | freetraining |     1 |      NULL | Free Contest #60 |             1 |             1 |
+| FRAME     | freetraining |     1 |      NULL | SEERC            |             0 |             0 |
+| HARDWRK   | freetraining |     1 |      NULL | SEERC            |             0 |             0 |
+| HERMAN    | freetraining |     1 |      NULL | COCI 06-07 #1    |             0 |             0 |
+| IDEAMRA   | freetraining |     1 |      NULL | SEERC            |             0 |             0 |
+| INTRNET   | freetraining |     1 |      NULL | SEERC            |             0 |             0 |
+| IRRATIO   | freetraining |     1 |      NULL | SEERC            |             0 |             0 |
+| LCM       | freetraining |     1 |      NULL | SEERC            |             0 |             0 |
+| LETTERS   | freetraining |     1 |      NULL | SEERC            |             0 |             0 |
+| MIRACUL   | freetraining |     1 |      NULL | SEERC            |             0 |             0 |
+| MODULO    | freetraining |     1 |      NULL | COCI 06-07 #1    |             0 |             0 |
+| OKVIRI    | freetraining |     1 |      NULL | COCI 06-07 #1    |             0 |             0 |
+| OLYMPIC   | freetraining |     1 |      NULL | SEERC            |             0 |             0 |
+| PORTO     | freetraining |     1 |      NULL | SWERC 14         |             0 |             0 |
+| PRIMES    | freetraining |     1 |      NULL | SEERC            |             0 |             0 |
+| PROMO     | freetraining |     1 |      NULL | SWERC 15         |             0 |             0 |
+| RAILWAY   | freetraining |     1 |      NULL | SEERC            |             0 |             0 |
+| READING   | freetraining |     1 |      NULL | SEERC            |             0 |             0 |
+| ROOTINT   | freetraining |     1 |      NULL | SEERC            |             0 |             0 |
+| SEARTEM   | freetraining |     1 |      NULL | SEERC            |             0 |             0 |
+| SERGAME   | freetraining |     1 |      NULL | SEERC            |             0 |             0 |
+| SERPTS    | freetraining |     1 |      NULL | SEERC            |             0 |             0 |
+| SHARES    | freetraining |     1 |      NULL | SEERC            |             0 |             0 |
+| SHELDON   | freetraining |     1 |      NULL | SWERC 15         |             0 |             0 |
+| SLIKAR    | freetraining |     1 |      NULL | COCI 06-07 #1    |             0 |             0 |
+| SOFTIND   | freetraining |     1 |      NULL | SEERC            |             0 |             0 |
+| STOCKEX   | freetraining |     1 |      NULL | SEERC            |             0 |             0 |
+| SYSENGI   | freetraining |     1 |      NULL | SEERC            |             0 |             0 |
+| TABLE     | freetraining |     1 |      NULL | SEERC            |             0 |             0 |
+| TAXIES    | freetraining |     1 |      NULL | SEERC            |             0 |             0 |
+| TRIPLES   | freetraining |     1 |      NULL | SEERC            |             0 |             0 |
+| BADNUM    | freetraining |     2 |      NULL | SEERC            |             0 |             0 |
+| BGPAINT   | freetraining |     2 |      NULL | SWERC 14         |             0 |             0 |
+| CALCULA   | freetraining |     2 |      NULL | SEERC            |             0 |             0 |
+| CAMERA    | freetraining |     2 |      NULL | SEERC            |             0 |             0 |
+| CASTLE    | freetraining |     2 |      NULL | SEERC            |             0 |             0 |
+| CITYPAK   | freetraining |     2 |      NULL | SWERC 14         |             0 |             0 |
+| COSMIC    | freetraining |     2 |      NULL | SEERC            |             0 |             0 |
+| EQUIVAL   | freetraining |     2 |      NULL | SEERC            |             0 |             0 |
+| GAMERS    | freetraining |     2 |      NULL | SEERC            |             0 |             0 |
+| GMECARD   | freetraining |     2 |      NULL | SWERC 15         |             0 |             0 |
+| GOLFBOT   | freetraining |     2 |      NULL | SWERC 14         |             0 |             0 |
+| INFLUEN   | freetraining |     2 |      NULL | SEERC            |             0 |             0 |
+| INTERCI   | freetraining |     2 |      NULL | SEERC            |             0 |             0 |
+| LCKNUM1   | freetraining |     2 |      NULL | SEERC            |             0 |             0 |
+| LONGPRE   | freetraining |     2 |      NULL | SEERC            |             0 |             0 |
+| MOSTINF   | freetraining |     2 |      NULL | SEERC            |             0 |             0 |
+| PAINT     | freetraining |     2 |      NULL | SEERC            |             0 |             0 |
+| PALIND    | freetraining |     2 |      NULL | SEERC            |             0 |             0 |
+| PERFECT   | freetraining |     2 |      NULL | SEERC            |             0 |             0 |
+| PRBLSET   | freetraining |     2 |      NULL | SEERC            |             0 |             0 |
+| QUICKAN   | freetraining |     2 |      NULL | SEERC            |             0 |             0 |
+| REDJOHN   | freetraining |     2 |      NULL | SEERC            |             0 |             0 |
+| RICOCHE   | freetraining |     2 |      NULL | SWERC 14         |             0 |             0 |
+| RSAFACT   | freetraining |     2 |      NULL | SEERC            |             0 |             0 |
+| RUSDOLL   | freetraining |     2 |      NULL | SEERC            |             0 |             0 |
+| SAFESEC   | freetraining |     2 |      NULL | SWERC 14         |             0 |             0 |
+| SECRET    | freetraining |     2 |      NULL | SEERC            |             0 |             0 |
+| SKYCODE   | freetraining |     2 |      NULL | SEERC            |             0 |             0 |
+| STRANGE   | freetraining |     2 |      NULL | SEERC            |             0 |             0 |
+| STRIPE    | freetraining |     2 |      NULL | SEERC            |             0 |             0 |
+| THREESQ   | freetraining |     2 |      NULL | SEERC            |             0 |             0 |
+| APLUSB    | freetraining |     3 |      NULL | SEERC            |             0 |             0 |
+| BINDEC    | freetraining |     3 |      NULL | NEERC 15-16      |             0 |             0 |
+| BYMOUTH   | freetraining |     3 |      NULL | SEERC            |             0 |             0 |
+| CHESS     | freetraining |     3 |      NULL | SEERC            |             0 |             0 |
+| CIRDIGI   | freetraining |     3 |      NULL | SEERC            |             0 |             0 |
+| COMGAME   | freetraining |     3 |      NULL | SEERC            |             0 |             0 |
+| DRAGON    | freetraining |     3 |      NULL | SEERC            |             0 |             0 |
+| FAVMUSC   | freetraining |     3 |      NULL | SEERC            |             0 |             0 |
+| GCDDET    | freetraining |     3 |      NULL | SEERC            |             0 |             0 |
+| GRAMMAR   | freetraining |     3 |      NULL | SEERC            |             0 |             0 |
+| HYPCUBE   | freetraining |     3 |      NULL | NEERC 15-16      |             0 |             0 |
+| LCKNUM2   | freetraining |     3 |      NULL | SEERC            |             0 |             0 |
+| LUCKCTY   | freetraining |     3 |      NULL | SEERC            |             0 |             0 |
+| MACHINE   | freetraining |     3 |      NULL | SEERC            |             0 |             0 |
+| MAXDIV    | freetraining |     3 |      NULL | SEERC            |             0 |             0 |
+| MONEYTR   | freetraining |     3 |      NULL | SWERC 14         |             0 |             0 |
+| MULSCHE   | freetraining |     3 |      NULL | SEERC            |             0 |             0 |
+| PLAYGEO   | freetraining |     3 |      NULL | none             |             0 |             0 |
+| PROFGEN   | freetraining |     3 |      NULL | SEERC            |             0 |             0 |
+| ROADPLN   | freetraining |     3 |      NULL | SEERC            |             0 |             0 |
+| ROBBERY   | freetraining |     3 |      NULL | SEERC            |             0 |             0 |
+| SAFETY    | freetraining |     3 |      NULL | SEERC            |             0 |             0 |
+| SOFTVIL   | freetraining |     3 |      NULL | SEERC            |             0 |             0 |
+| TERMGEN   | freetraining |     3 |      NULL | SEERC            |             0 |             0 |
+| UFO       | freetraining |     3 |      NULL | SEERC            |             0 |             0 |
+| VANDINS   | freetraining |     3 |      NULL | SEERC            |             0 |             0 |
++-----------+--------------+-------+-----------+------------------+---------------+---------------+
+264 rows in set (0.00 sec)

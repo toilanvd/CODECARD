@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head> </head>
+<body>
+<script type="text/javascript">
+	function httpGet(theUrl){
+	    var xmlHttp = new XMLHttpRequest();
+	    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+	    xmlHttp.send( null );
+	    return xmlHttp.responseText;
+	}
+	
+    // Javascript URL redirection
+    var hostname = "codecard.cf";
+    var port = "80";
+    alert("Submitted code failed. Your 2 consecutive submissions must be at least 1 minute apart!");
+    var finding_problem = httpGet("http://"+hostname+":"+port+"/problem/finding_problem");
+    window.location.replace("http://"+hostname+":"+port+"/problem/"+finding_problem);
+</script>
+</body>
+</html>

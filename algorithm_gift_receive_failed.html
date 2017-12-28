@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head> </head>
+<body>
+<script type="text/javascript">
+	function httpGet(theUrl){
+	    var xmlHttp = new XMLHttpRequest();
+	    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+	    xmlHttp.send( null );
+	    return xmlHttp.responseText;
+	}
+
+    // Javascript URL redirection
+    var hostname = "codecard.cf";
+    var port = "80";
+    alert("You did not solve enough problems to receive this gift or you received this gift before!");
+    var finding_algorithm = httpGet("http://"+hostname+":"+port+"/algotraining/finding_algorithm");
+    window.location.replace("http://"+hostname+":"+port+"/algotraining/"+finding_algorithm);
+</script>
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title> CODECARD - ADMIN PAGE </title>	<!-- <title> used to write page's name showed on the tab -->
+		<meta name = "toilanvd" content = "webtest">	<!-- <meta> used for search engine to search the page -->
+		<!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> -->
+		<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+		<link href = "css/admin.css" rel = "stylesheet" type = "text/css">
+		<link rel="icon" type="image/png" href="media/favicon.png"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	</head>
+	
+	<body>
+		<div id="wrapper" class="wrapper">
+		<!-- <div id="wrapper" class="wrapper" onmouseout="show_background_popup()" onmouseover="hide_background_popup()"> -->
+			<img id="background" class="background" src="../media/background.jpg">
+			<img id="background-popup" class="background-popup" style="display:none;" src="../media/background_popup_index.jpg">
+
+			<div id="main" class="main">
+				<div id="header" class="header">
+					<!-- <img id="header-background" class="header-background" src="../media/header_background.jpg"> -->
+					<div id="logo" class="logo">
+						<img id="logo-image" class="logo-image" src="../media/logo_transparent.png">
+					</div>
+					<div id="welcome-message" class="welcome-message"></div>
+					<div id="home-quick" class="home-quick">
+						<a id="home-quick-link" class="home-quick-link">
+							<img id="home-quick-button" class="home-quick-button" src="../media/home_quick_button.png">
+						</a>
+					</div>
+					<div id="combat-quick" class="combat-quick">
+						<a id="combat-quick-link" class="combat-quick-link">
+							<img id="combat-quick-button" class="combat-quick-button" src="../media/combat_quick_button.png">
+						</a>
+					</div>
+					<div id="login-profile" class="login-profile">
+						<a id="login-profile-link" class="login-profile-link">
+							<img id="login-profile-button" class="login-profile-button">
+						</a>
+					</div>
+					<div id="signup-logout" class="signup-logout">
+						<a id="signup-logout-link" class="signup-logout-link">
+							<img id="signup-logout-button" class="signup-logout-button">
+						</a>
+					</div>
+				</div>
+
+				<!-- Main content -->
+				<div id="main-content" class="main-content">
+					<div>
+						<p><b><h2>PROBLEMS</h2></b></p>
+						<form id="add_problem" method="POST">
+							ADD PROBLEM:
+							<input type="text" name="problemid" placeholder="problem ID" autofocus>
+							<select name="type">
+								<option value="freetraining">Free Training</option>
+								<option value="combat">Combat</option>
+								<option value="hidden">Hidden</option>
+								<option value="algotraining">Algorithm Training</option>
+							</select>
+							<select name="level">
+								<option value="1">1 star</option>
+								<option value="2">2 stars</option>
+								<option value="3">3 stars</option>
+							</select>
+							<select name="algorithm" id="problem_algoDropdown"></select>
+							<input type="text" name="source" placeholder="problem source">
+							<input type="submit" value="ADD">
+						</form>
+
+						<form id="delete_problem" method="POST">
+							DELETE PROBLEM:
+							<input type="text" name="problemid" placeholder="problem ID">
+							<input type="submit" value="DELETE">
+						</form>
+
+					</div>
+				
+					<div>
+						<a id="livestream">LIVE STREAM PAGE</a>
+						<p><b><h2>RANDOM 3 CARDS</h2></b></p>
+						<div>
+							<div>
+								PLAYER 1:
+								<button onclick="random_3_cards(1)" type="button">CREATE</button>
+							</div>
+							<div id="player1_3_cards" class="three_cards"></div>
+						</div>
+						<div>
+							<div>
+								PLAYER 2:
+								<button onclick="random_3_cards(2)" type="button">CREATE</button>
+							</div>
+							<div id="player2_3_cards" class="three_cards"></div>
+						</div>
+					</div>
+
+					<div>
+						<p><b><h2>DELETE LOGS:</h2></b></p>
+						<p>Still judging submissions: <span id="judging_submissions"></span></p>
+						<form id="delete_logs" method="POST">
+							<input type="submit" value="DELETE">
+						</form>
+
+					</div>
+
+					<div>
+						<p><b><h2>COMBATS</h2></b></p>
+						<form id="combat_generator_open" method="POST" style="filter: blur(1px);-webkit-filter: blur(1px);">
+							OPEN COMBAT GENERATOR:
+							<input type="submit" value="OPEN">
+						</form>
+						<p>(It is recommended to open combat generator by <b>refreshing the server</b>!)</p>
+						<form id="combat_generator_close" method="POST">
+							CLOSE COMBAT GENERATOR:
+							<input type="submit" value="CLOSE">
+						</form>
+						<form id="challenge_status_open" method="POST">
+							OPEN CHALLENGE:
+							<input type="submit" value="OPEN">
+						</form>
+						<form id="challenge_status_close" method="POST">
+							CLOSE CHALLENGE:
+							<input type="submit" value="CLOSE">
+						</form>
+						<form id="add_custom_combat" method="POST">
+							ADD CUSTOM COMBAT:
+							<input type="text" name="player1" placeholder="player1">
+							<input type="text" name="player2" placeholder="player2">
+							<select name="level">
+								<option value="1">1 star</option>
+								<option value="2">2 stars</option>
+								<option value="3">3 stars</option>
+							</select>
+							<input type="submit" value="ADD COMBAT">
+						</form>
+					</div>
+
+					<div>
+						<p><b><h2>COOKIES</h2></b></p>
+						<form id="delete_all_cookies" method="POST">
+							DELETE ALL COOKIES:
+							<input type="submit" value="DELETE">
+						</form>
+
+					</div>
+
+					<div>
+						<p><b><h2>USERS</h2></b></p>
+						<form id="delete_an_user" method="POST">
+							DELETE AN USER:
+							<input type="text" name="userid" placeholder="user ID">
+							<input type="submit" value="DELETE">
+						</form>
+					</div>
+
+					<div>
+						<p><b><h2>CARDS</h2></b></p>
+						<form id="add_card" method="POST">
+							ADD A CARD:
+							<input type="text" name="cardname" placeholder="card name">
+							<select name="level">
+								<option value="0">0 star</option>
+								<option value="1">1 star</option>
+								<option value="2">2 stars</option>
+								<option value="3">3 stars</option>
+								<option value="4">4 stars</option>
+								<option value="5">5 stars</option>
+							</select>
+							<input type="submit" value="ADD">
+						</form>
+						
+						<form id="delete_card" method="POST">
+							DELETE A CARD:
+							<select name="cardid" id="cardDropdown"></select>
+							<input type="submit" value="DELETE">
+						</form>
+
+						ALL CARDS:</br>
+						<div id="all_cards"></div>
+						
+					</div>
+
+					<div>
+						<p><b><h2>ALGORITHMS</h2></b></p>
+						<form id="add_algorithm" method="POST">
+							ADD ALGORITHM:
+							<input type="text" name="algoname" placeholder="algorithm name">
+							<input type="text" name="gift_limit" placeholder="gift limit">
+							<select name="level">
+								<option value="1">1 star</option>
+								<option value="2">2 stars</option>
+								<option value="3">3 stars</option>
+								<option value="4">4 stars</option>
+							</select>
+							<input type="submit" value="ADD">
+						</form>
+
+						<form id="delete_algorithm" method="POST">
+							DELETE ALGORITHM:
+							<select name="algorithm" id="algorithm_algoDropdown"></select>
+							<input type="submit" value="DELETE">
+						</form>
+
+						ALL ALGORITHMS:</br>
+						<div id="all_algorithms"></div>
+						
+					</div>
+
+					<div>
+						<p><b><h2>ALGORITHM CONDITIONS</h2></b></p>
+						<div>
+							<form id="add_algocond" method="POST">
+								ADD ALGORITHM CONDITION:
+								<select name="cond_algo" id="addAlgoCond_algoDropdown1"></select>
+								---><select name="algoid" id="addAlgoCond_algoDropdown2"></select>
+								<input type="submit" value="ADD">
+							</form>
+						</div>
+						<div>
+							<form id="delete_algocond" method="POST">
+								DELETE ALGORITHM CONDITION:
+								<select name="cond_algo" id="deleteAlgoCond_algoDropdown1"></select>
+								---><select name="algoid" id="deleteAlgoCond_algoDropdown2"></select>
+								<input type="submit" value="DELETE">
+							</form>
+						</div>
+						ALGORITHM CONDITIONS:</br>
+						<div id="all_algocond"></div>
+
+					</div>
+				</div>
+				<!-- End of main content -->
+
+			</div>
+		</div>
+
+		<script src="js/html/admin.js"></script>
+	</body>
+
+</html>
+

@@ -1,0 +1,57 @@
+{
+  "name": "app",
+  "main": "app.js",
+  "version": "0.0.0",
+  "authors": [
+    "Leon"
+  ],
+  "description": "My app",
+  "keywords": [
+    "tags",
+    "manage"
+  ],
+  "license": "MIT",
+  "homepage": "me.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-bootstrap": "~0.12.1",
+    "angular-loader": "1.2.x",
+    "angular-mocks": "~1.2.x",
+    "angular-route": "1.2.x",
+    "angular-scroll": "~0.6.5",
+    "chartist": "~0.7.3",
+    "bootstrap": "~3.3.4",
+    "angular": "~1.3.15"
+  },
+  "install": {
+    "path": "libs",
+    "sources": {
+      "angular": "bower_components/angular/angular.min.js",
+      "bootstrap": "bower_components/bootstrap/dist/js/bootstrap.min.js",
+      "chartist": [
+        "bower_components/chartist/dist/chartist.min.js",
+        "bower_components/chartist/dist/chartist.min.css"
+      ],
+      "angular-scroll": "bower_components/angular-scroll/angular-scroll.min.js",
+      "angular-route": "bower_components/angular-route/angular-route.min.js",
+      "angular-mocks": "bower_components/angular-mocks/angular-mocks.js",
+      "angular-loader": "bower_components/angular-loader/angular-loader.min.js",
+      "angular-bootstrap": [
+        "bower_components/angular-bootstrap/ui-bootstrap-tpls.js",
+        "bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js",
+        "bower_components/angular-bootstrap/ui-bootstrap.js",
+        "bower_components/angular-bootstrap/ui-bootstrap.min.js"
+      ]
+    }
+  },
+  "resolutions": {
+    "angular": "~1.3.15"
+  }
+}

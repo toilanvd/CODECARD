@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title> CODECARD - User info </title>	<!-- <title> used to write page's name showed on the tab -->
+		<meta name = "toilanvd" content = "webtest">	<!-- <meta> used for search engine to search the page -->
+		<!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> -->
+		<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+		<link href = "../css/user.css" rel = "stylesheet" type = "text/css">
+		<link rel="icon" type="image/png" href="../media/favicon.png"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+	</head>
+	
+	<body>
+		<div id="wrapper" class="wrapper">
+		<!-- <div id="wrapper" class="wrapper" onmouseout="show_background_popup()" onmouseover="hide_background_popup()"> -->
+			<img id="background" class="background" src="../media/background_user.jpg">
+			<img id="background-popup" class="background-popup" style="display:none;" src="../media/background_popup_index.jpg">
+
+			<div id="main" class="main">
+				<div id="header" class="header">
+					<!-- <img id="header-background" class="header-background" src="../media/header_background.jpg"> -->
+					<div id="logo" class="logo">
+						<img id="logo-image" class="logo-image" src="../media/logo_transparent.png">
+					</div>
+					<div id="welcome-message" class="welcome-message"></div>
+					<div id="home-quick" class="home-quick">
+						<a id="home-quick-link" class="home-quick-link">
+							<img id="home-quick-button" class="home-quick-button" src="../media/home_quick_button.png">
+						</a>
+					</div>
+					<div id="combat-quick" class="combat-quick">
+						<a id="combat-quick-link" class="combat-quick-link">
+							<img id="combat-quick-button" class="combat-quick-button" src="../media/combat_quick_button.png">
+						</a>
+					</div>
+					<div id="login-profile" class="login-profile">
+						<a id="login-profile-link" class="login-profile-link">
+							<img id="login-profile-button" class="login-profile-button">
+						</a>
+					</div>
+					<div id="signup-logout" class="signup-logout">
+						<a id="signup-logout-link" class="signup-logout-link">
+							<img id="signup-logout-button" class="signup-logout-button">
+						</a>
+					</div>
+				</div>
+
+				<!-- Main content -->
+				<div id="main-content" class="main-content">
+					<div id="card-map" class="card-map">
+						<div id="first-row" class="card-row">
+							<div class="card">
+								<div class="card-image-frame">
+									<img id="card-18-image" class="card-image">
+									<img id="card-18" class="card-image-popup-first-row">
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-image-frame">
+									<img id="card-19-image" class="card-image">
+									<img id="card-19" class="card-image-popup-first-row">
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-image-frame">
+									<img id="card-20-image" class="card-image">
+									<img id="card-20" class="card-image-popup-first-row">
+								</div>
+							</div>
+
+							<div id="user-combats" class="user-combats">
+								<div id="user-combats-title" class="user-combats-title">
+									<p><b><u>USER COMBATS:</u></b></p>
+								</div>
+								<div id="user-combats-content" class="user-combats-content"></div>
+							</div>
+						</div>
+						<div id="second-row" class="card-row"></div>
+						<div id="third-row" class="card-row"></div>
+						<div id="fourth-row" class="card-row"></div>
+					</div>
+
+					<div id="user-info" class="user-info">
+						<div id="user-profile" class="user-profile">
+							<div id="user-profile-title" class="user-profile-title">
+								<p><b><u>USER PROFILE:</u></b></p>
+							</div>
+							<div id="user-profile-content" class="user-profile-content"></div>
+						</div>
+
+						<div id="user-problems" class="user-problems">
+							<div id="user-problems-title" class="user-problems-title">
+								<p><b><u>PROBLEMS:</u></b></p>
+							</div>
+							<div id="user-problems-content" class="user-problems-content"></div>
+						</div>
+					</div>
+				</div>
+				<!-- End of main content -->
+
+			</div>
+		</div>
+
+		<script src="../js/html/user.js"></script>
+	</body>
+
+</html>
+

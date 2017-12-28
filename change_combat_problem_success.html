@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head> </head>
+<body>
+<script type="text/javascript">
+	function httpGet(theUrl){
+	    var xmlHttp = new XMLHttpRequest();
+	    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+	    xmlHttp.send( null );
+	    return xmlHttp.responseText;
+	}
+
+    // Javascript URL redirection
+    var hostname = "codecard.cf";
+    var port = "80";
+    alert("Changed combat problem successfully!");
+    var combatid = httpGet("http://"+hostname+":"+port+"/combat/finding_combat");
+    window.location.replace("http://"+hostname+":"+port+"/combat/"+combatid);
+</script>
+</body>
+</html>

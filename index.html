@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title> CODECARD</title>	<!-- <title> used to write page's name showed on the tab -->
+		<meta name = "toilanvd" content = "webtest">	<!-- <meta> used for search engine to search the page -->
+		<!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> -->
+		<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+		<link href = "css/index.css" rel = "stylesheet" type = "text/css">
+		<link rel="icon" type="image/png" href="media/favicon.png"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	</head>
+	
+	<body>
+		<!-- <div id="wrapper" class="wrapper"> -->
+		<div id="wrapper" class="wrapper" onmouseout="show_background_popup()" onmouseover="hide_background_popup()">
+			<img id="background" class="background" src="../media/background.jpg">
+			<img id="background-popup" class="background-popup" style="display:none;" src="../media/background_popup_index.jpg">
+
+			<div id="main" class="main">
+				<div id="header" class="header">
+					<!-- <img id="header-background" class="header-background" src="../media/header_background.jpg"> -->
+					<div id="logo" class="logo">
+						<img id="logo-image" class="logo-image" src="../media/logo_transparent.png">
+					</div>
+					<div id="welcome-message" class="welcome-message"></div>
+					<div id="home-quick" class="home-quick">
+						<a id="home-quick-link" class="home-quick-link">
+							<img id="home-quick-button" class="home-quick-button">
+						</a>
+					</div>
+					<div id="combat-quick" class="combat-quick">
+						<a id="combat-quick-link" class="combat-quick-link">
+							<img id="combat-quick-button" class="combat-quick-button" src="../media/combat_quick_button.png">
+						</a>
+					</div>
+					<div id="login-profile" class="login-profile">
+						<a id="login-profile-link" class="login-profile-link">
+							<img id="login-profile-button" class="login-profile-button">
+						</a>
+					</div>
+					<div id="signup-logout" class="signup-logout">
+						<a id="signup-logout-link" class="signup-logout-link">
+							<img id="signup-logout-button" class="signup-logout-button">
+						</a>
+					</div>
+				</div>
+
+				<!-- Main content -->
+				<div>
+					<div id="navigation" class="navigation">
+						<!-- <img id="navigation-rod" class="navigation-rod" src="../media/navigation_rod.png"> -->
+						<div id="introduction" class="introduction">
+							<a id="introduction-link" class="introduction-link">
+								<img id="introduction-button" class="introduction-button" src="../media/introduction_button.png">
+								<img class="introduction-button-popup" src="../media/introduction_button_popup.png">
+							</a>
+						</div>
+						<div id="algotraining" class="algotraining">
+							<a id="algotraining-link" class="algotraining-link">
+								<img id="algotraining-button" class="algotraining-button" src="../media/algotraining_button.png">
+								<img class="algotraining-button-popup" src="../media/algotraining_button_popup.png">
+							</a>
+						</div>
+						<div id="freetraining" class="freetraining">
+							<a id="freetraining-link" class="freetraining-link">
+								<img id="freetraining-button" class="freetraining-button" src="../media/freetraining_button.png">
+								<img class="freetraining-button-popup" src="../media/freetraining_button_popup.png">
+							</a>
+						</div>
+						<div id="combat" class="combat">
+							<a id="combat-link" class="combat-link">
+								<img id="combat-button" class="combat-button" src="../media/combat_button.png">
+								<img class="combat-button-popup" src="../media/combat_button_popup.png">
+							</a>
+						</div>
+						<div id="gallery" class="gallery">
+							<a id="gallery-link" class="gallery-link">
+								<img id="gallery-button" class="gallery-button" src="../media/gallery_button.png">
+								<img class="gallery-button-popup" src="../media/gallery_button_popup.png">
+							</a>
+						</div>
+					</div>
+
+					<div id="main-content" class="main-content">
+						<div id="notification" class="notification">
+							<img class="notification-slide" onclick="goto_link(1)" src="../media/notification_slide_1.jpg">
+							<img class="notification-slide" onclick="goto_link(2)" src="../media/notification_slide_2.jpg">
+							<img class="notification-slide" onclick="goto_link(3)" src="../media/notification_slide_3.jpg">
+							<img class="notification-slide" onclick="goto_link(4)" src="../media/notification_slide_4.jpg">
+							<img class="notification-slide" onclick="goto_link(5)" src="../media/notification_slide_5.jpg">
+							<img class="left_button" onclick="plusDivs(-1)" src="../media/left_button.png">
+							<img class="right_button" onclick="plusDivs(+1)" src="../media/right_button.png">
+						</div>
+						<div id="banner-line" class="banner-line">
+							<marquee behavior='right' scrollamount='10' onmouseover="this.stop()" onmouseout="this.start()">
+								<span id="banner-line-content" class="banner-line-content"></span>
+							</marquee>
+						</div>
+
+						<div id="combat-and-ranking" class="combat-and-ranking">
+							<div id="combat-board" class="combat-board">
+								<img id="combat-board-frame" class="combat-board-frame" src="../media/combat_board_frame.png">
+								<div id="combat-board-table" class="combat-board-table">
+									<div id="combat-board-title" class="combat-board-title">
+										<p><b><u>COMBATS</u></b></p>
+									</div>
+									<div id="combat-board-content" class="combat-board-content"></div>
+								</div>
+							</div>
+							<div id="ranking-board" class="ranking-board">
+								<img id="ranking-board-frame" class="ranking-board-frame" src="../media/user_ranking_board_frame.png">
+								<div id="ranking-board-table" class="ranking-board-table">
+									<div id="ranking-board-title" class="ranking-board-title">
+										<p><b><u>USER RANKING</u></b></p>
+									</div>
+									<div id="ranking-board-content" class="ranking-board-content"></div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<!-- End of main content -->
+
+			</div>
+		</div>
+
+		<script src="js/html/index.js"></script>
+	</body>
+
+</html>
+

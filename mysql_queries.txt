@@ -1,0 +1,181 @@
+CREATE TABLE users (
+	userid CHAR(30),
+	username CHAR(30) CHARACTER SET UTF8,
+	password CHAR(255),
+	finding_algorithm INT,
+	finding_problem CHAR(15),
+	current_gift INT,
+	last_online_time INT,
+	card_using INT,
+	problem_level INT,
+	finding_combat CHAR(15),
+	next_combat CHAR(255) CHARACTER SET UTF8,
+	block_challenge BOOLEAN,
+	challenge_oppid CHAR(30),
+	challenge_level INT,
+	challenge_minute INT,
+	challenge_second INT,
+	challenge_read BOOLEAN,
+	last_submit_minute INT,
+	last_submit_second INT,
+	PRIMARY KEY(userid));
+
+CREATE TABLE user_cookies (
+	userid CHAR(30),
+	cookie CHAR(30),
+	last_time_used INT,
+	FOREIGN KEY (userid) REFERENCES users(userid),
+	PRIMARY KEY(userid,cookie));
+
+CREATE TABLE user_ips (
+	userid CHAR(30),
+	ip CHAR(30),
+	FOREIGN KEY (userid) REFERENCES users(userid),
+	PRIMARY KEY(userid,ip));
+
+CREATE TABLE cards (
+	cardid INT,
+	name CHAR(50) CHARACTER SET UTF8,
+	level INT,
+	popularity INT,
+	PRIMARY KEY(cardid));
+
+CREATE TABLE user_cards (
+	userid CHAR(30),
+	cardid INT,
+	name CHAR(50) CHARACTER SET UTF8,
+	level INT,
+	copy INT,
+	FOREIGN KEY (userid) REFERENCES users(userid),
+	FOREIGN KEY (cardid) REFERENCES cards(cardid),
+	PRIMARY KEY(userid,cardid));
+
+CREATE TABLE algorithms (
+	algoid INT,
+	name CHAR(50),
+	gift_limit INT,
+	level INT,
+	probs INT,
+	PRIMARY KEY(algoid));
+
+CREATE TABLE user_algorithms (
+	userid CHAR(30),
+	algoid INT,
+	name CHAR(50),
+	opened BOOLEAN,
+	accepted_problems INT,
+	unaccepted_problems INT,
+	gift_limit INT,
+	level INT,
+	received_gift BOOLEAN,
+	FOREIGN KEY (userid) REFERENCES users(userid),
+	FOREIGN KEY (algoid) REFERENCES algorithms(algoid),
+	PRIMARY KEY(userid,algoid));
+
+CREATE TABLE algorithm_conditions (
+	algoid INT,
+	cond_algo INT,
+	FOREIGN KEY (algoid) REFERENCES algorithms(algoid),
+	FOREIGN KEY (cond_algo) REFERENCES algorithms(algoid),
+	PRIMARY KEY(algoid,cond_algo));
+
+CREATE TABLE problems (
+	problemid CHAR(15),
+	type CHAR(20),
+	level INT,
+	algorithm INT,
+	source CHAR(255),
+	free_solution BOOLEAN,
+	free_testdata BOOLEAN,
+	PRIMARY KEY(problemid));
+
+CREATE TABLE user_problems (
+	userid CHAR(30),
+	problemid CHAR(15),
+	type CHAR(20),
+	current_result INT,
+	max_result INT,
+	running_time FLOAT,
+	max_result_time CHAR(50),
+	level INT,
+	algorithm INT,
+	grading_num INT,
+	grading_code INT,
+	received_gift BOOLEAN,
+	max_result_code INT,
+	FOREIGN KEY (userid) REFERENCES users(userid),
+	FOREIGN KEY (problemid) REFERENCES problems(problemid),
+	PRIMARY KEY(userid,problemid));
+
+CREATE TABLE combats (
+	combatid CHAR(15),
+	userid CHAR(30),
+	oppid CHAR(30),
+	start_time CHAR(50),
+	start_minute INT,
+	start_second INT,
+	challenge BOOLEAN,
+	card_using INT,
+	card_level INT,
+	problemid CHAR(15),
+	problem_level INT,
+	grading_num INT,
+	grading_code INT,
+	submit_left INT,
+	max_time INT,
+	lock_problemset_time INT,
+	dead_time INT,
+	dead_score INT,
+	current_score INT,
+	original_score INT,
+	card_score INT,
+	bonus_score INT,
+	virtual_score INT,
+	running_time FLOAT,
+	ingame_active BOOLEAN,
+	bonuspoint_time INT,
+	bonus_coefficient INT,
+	solution_time INT,
+	change_problem_time INT,
+	last_submit_time CHAR(50),
+	last_submit_minute INT,
+	last_submit_second INT,
+	added_to_freetraining BOOLEAN,
+	received_gift BOOLEAN,
+	message CHAR(255) CHARACTER SET UTF8,
+	ended BOOLEAN,
+	max_score_code INT,
+	FOREIGN KEY (userid) REFERENCES users(userid),
+	FOREIGN KEY (oppid) REFERENCES users(userid),
+	FOREIGN KEY (card_using) REFERENCES cards(cardid),
+	FOREIGN KEY (problemid) REFERENCES problems(problemid),
+	PRIMARY KEY(combatid,userid));
+
+CREATE TABLE combat_requests(
+	userid CHAR(30),
+	card_using INT,
+	problem_level INT,
+	minute INT,
+	second INT,
+	FOREIGN KEY (userid) REFERENCES users(userid),
+	FOREIGN KEY (card_using) REFERENCES cards(cardid),
+	PRIMARY KEY(userid));
+
+CREATE TABLE block_list(
+	userid CHAR(30),
+	blockid CHAR(30),
+	FOREIGN KEY (userid) REFERENCES users(userid),
+	FOREIGN KEY (blockid) REFERENCES users(userid),
+	PRIMARY KEY (userid,blockid));
+
+CREATE TABLE combat_wins(
+	userid CHAR(30),
+	win INT,
+	one_submit INT,
+	level_three INT,
+	one_star INT,
+	half_hour INT,
+	receive_gift_mask INT,
+	FOREIGN KEY (userid) REFERENCES users(userid),
+	PRIMARY KEY (userid));
+
