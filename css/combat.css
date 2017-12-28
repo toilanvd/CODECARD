@@ -1,0 +1,818 @@
+a{
+	text-decoration: none;
+}
+
+body{
+	/*overflow: hidden;*/
+}
+
+p{
+	margin-top: 9px;
+	margin-bottom: 9px;
+}
+
+.wrapper{
+	position: absolute;
+
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+	/*width: 1310px;*/
+	/*height: 660px;*/
+
+	margin: 0 auto;
+}
+
+.background{
+	position: fixed;
+
+	top: 0;
+	left: 0;
+	
+	width: 100%;
+	height: 100%;
+}
+
+.main{
+	position: absolute;
+
+	top: 30px;
+	left: 70px;
+
+	width: 1160px;
+	height: 590px;
+
+	/*border: 2px solid red;*/
+}
+
+.header{
+	position: relative;
+
+	/*white-space: nowrap;*/
+
+	width: 1160px;
+	height: 70px;
+
+	/*border: 2px solid black;*/
+}
+
+.header-background{
+	position: absolute;
+
+	width: 1160px;
+	height: 70px;
+}
+
+.logo{
+	position: relative;
+
+	display: inline-block;
+
+	width: 190px;
+	height: 70px;
+
+	text-align: center;
+
+	/*border: 2px solid black;*/
+}
+
+.logo-image{
+	position: relative;
+
+	width: 150px;
+	height: 70px;
+}
+
+.welcome-message{
+	position: relative;
+
+	display: inline-block;
+
+	width: 450px;
+	height: 70px;
+
+	vertical-align: top;
+	line-height: 70px;
+	text-align: center;
+
+	font-size: 16pt;
+	font-family: Courier;
+
+
+	/*border: 2px solid black;*/
+}
+
+.home-quick{
+	position: relative;
+
+	display: inline-block;
+
+	width: 120px;
+	height: 50px;
+
+	vertical-align: top;
+	top: 10px;
+
+	/*border: 2px solid black;*/
+}
+
+.home-quick-button{
+	position: relative;
+
+	width: 120px;
+	height: 50px;
+}
+
+.combat-quick{
+	position: relative;
+
+	display: inline-block;
+
+	width: 120px;
+	height: 50px;
+
+	vertical-align: top;
+	top: 10px;
+
+	/*border: 2px solid black;*/
+}
+
+.combat-quick-button{
+	position: relative;
+
+	width: 120px;
+	height: 50px;
+}
+
+.login-profile{
+	position: relative;
+
+	display: inline-block;
+
+	width: 120px;
+	height: 50px;
+
+	vertical-align: top;
+	top: 10px;
+
+	/*border: 2px solid black;*/
+}
+
+.login-profile-button{
+	position: relative;
+
+	width: 120px;
+	height: 50px;
+}
+
+.signup-logout{
+	position: relative;
+
+	display: inline-block;
+
+	width: 120px;
+	height: 50px;
+
+	vertical-align: top;
+	top: 10px;
+
+	/*border: 2px solid black;*/
+}
+
+.signup-logout-button{
+	position: relative;
+
+	width: 120px;
+	height: 50px;
+}
+
+.main-content{
+	position: relative;
+
+	width: 1160px;
+	height: 520px;
+}
+
+.problem-document{
+	position: relative;
+
+	display: inline-block;
+
+	width: 700px;
+	height: 510px;
+	
+	top: 10px;
+}
+
+.problemid{
+	position: relative;
+
+	text-align: center;
+	width: 700px;
+	height: 30px;
+
+	font-size: 14pt;
+}
+
+.problem-document-content{
+	position: relative;
+
+	width: 700px;
+	height: 480px;	
+}
+
+.problem-presentation{
+	position: relative;
+	width: 700px;
+	height: 480px;
+}
+
+.combat{
+	position: relative;
+
+	display: inline-block;
+
+	top: 10px;
+	left: 10px;
+	width: 430px;
+	height: 500px;
+
+	vertical-align: top;
+	text-align: left;
+
+	border: 5px solid black;
+	border-radius: 10px;
+  	word-break: break-word;
+
+  	background: burlywood;
+}
+
+.combat-information-frame{
+	position: absolute;
+
+	width: 430px;
+	height: 500px;
+}
+
+.combat-information{
+	position: relative;
+
+	top: 4px;
+	left: 35px;
+	width: 364px;
+	height: 490px;
+
+	text-align: center;
+	font-size: 12pt;
+
+	/*border: 2px solid black;*/
+}
+
+.players-time-score{
+	position: relative;
+
+	width: 364px;
+	height: 160px;
+}
+
+.player{
+	position: relative;
+
+	display: inline-block;
+
+	width: 100px;
+	height: 200px;
+
+	vertical-align: top;
+
+	/*left: 2px;*/
+}
+
+.card-image-frame{
+	position: relative;
+
+	width: 100px;
+	height: 130px;
+}
+
+.card-image{
+	position: relative;
+
+	width: 100px;
+	height: 130px;
+}
+
+.card-image-popup{
+	display: none;
+}
+
+.card-image:hover{
+	position: relative;
+
+	width: 100px;
+	height: 130px;
+
+	-webkit-filter: brightness(150%);
+    filter: brightness(150%);
+}
+
+.card-image:hover + .card-image-popup{
+	position: relative;
+
+	top: -150px;
+	right: 310px;
+
+	display: block;
+
+	width: 300px;
+	height: 420px;
+
+	z-index: 1;
+}
+
+.playerid-frame{
+	position: relative;
+
+	display: inline-block;
+
+	/*width: auto;*/
+	height: 30px;
+	max-width: 100px;
+
+	line-height: 30px;
+
+	text-align: center;
+
+	overflow-y: auto;
+	overflow-x: auto;
+
+	font-size: 14pt;
+	/*word-break: break-all;*/
+	/*font-weight: bold;*/
+}
+
+.playerid-frame a{
+	text-decoration: none;
+	color:inherit;
+}
+
+.time-score{
+	position: relative;
+
+	display: inline-block;
+
+	width: 150px;
+	height: 130px;
+
+	vertical-align: top;
+}
+
+.time{
+	position: relative;
+
+	width: 150px;
+	height: 30px;
+
+	line-height: 30px;
+	text-align: center;
+
+	/*border: 2px solid black;*/
+
+	font-size: 13pt;
+	font-weight: bold;
+}
+
+.score{
+	position: relative;
+
+	width: 150px;
+	height: 90px;
+
+	padding-bottom: 10px;
+}
+
+.player-score{
+	position: relative;
+
+	display: inline-block;
+
+	width: 70px;
+	height: 90px;
+
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.user-full-score{
+	position: relative;
+
+	width: 70px;
+	height: 60px;
+
+	color: green;
+
+	line-height: 60px;
+
+	text-align: center;
+
+	/*border: 2px solid black;*/
+
+	font-size: 25pt;
+	font-weight: bold;
+}
+
+.opp-full-score{
+	position: relative;
+
+	width: 70px;
+	height: 60px;
+
+	color: red;
+
+	line-height: 60px;
+
+	text-align: center;
+
+	/*border: 2px solid black;*/
+
+	font-size: 25pt;
+	font-weight: bold;
+}
+
+.player-original-score{
+	position: relative;
+
+	width: 70px;
+	height: 30px;
+
+	/*line-height: 40px;*/
+
+	text-align: center;
+
+	/*border: 2px solid black;*/
+
+	font-size: 14pt;
+}
+
+.level-image-frame{
+	position: relative;
+
+	width: 150px;
+	height: 30px;
+
+	/*border: 2px solid black;*/
+}
+
+.level-image{
+	position: relative;
+
+	width: 100px;
+	height: 30px;
+}
+
+.effect-buttons{
+	position: relative;
+
+	width: 364px;
+	height: 50px;
+
+	top: 10px;
+}
+
+.download-solution-frame{
+	position: relative;
+
+	display: inline-block;
+
+	width: 175px;
+	height: 50px;
+}
+
+.download-solution-available-button-image{
+	position: relative;
+
+	width: 175px;
+	height: 50px;
+}
+
+.download-solution-unavailable-button-image{
+	position: relative;
+
+	width: 175px;
+	height: 50px;
+
+	-webkit-filter: grayscale(100%);
+	filter:grayscale(100%);
+}
+
+.change-problem-frame{
+	position: relative;
+
+	display: inline-block;
+
+	width: 175px;
+	height: 50px;
+
+	
+}
+
+.change-problem-available-button-image{
+	position: relative;
+
+	width: 175px;
+	height: 50px;
+}
+
+.change-problem-unavailable-button-image{
+	position: relative;
+
+	width: 175px;
+	height: 50px;
+
+	-webkit-filter: grayscale(100%);
+	filter:grayscale(100%);
+}
+
+.grading{
+	position: relative;
+
+	width: 364px;
+	/*height: 180px;*/
+
+	top: 5px;
+}
+
+.grading-status{
+	position: relative;
+
+	width: 364px;
+}
+
+.grading-and-sources{
+	position: relative;
+
+	top: 10px;
+	left: 2px;
+	width: 364px;
+	height: 70px;
+
+	text-align: left;
+
+	/*border: 2px solid black;*/
+}
+
+.grading-log{
+	position: relative;
+
+	display: inline-block;
+
+	width: 240px;
+	height: 64px;
+
+	vertical-align: top;
+	text-align: left;
+
+	border: 2px solid black;
+	padding-left: 5px;
+	padding-right: 5px;
+  	word-break: break-word;
+	overflow-y: scroll;
+}
+
+.sources-and-results{
+	position: relative;
+
+	display: inline-block;
+
+	width: 85px;
+	height: 68px;
+
+	vertical-align: top;
+	text-align: left;
+
+	padding-left: 5px;
+	padding-right: 5px;
+  	word-break: break-word;
+	overflow-y: scroll;
+
+	background-color: white;
+
+	border: 2px solid black;
+}
+
+.code-submitting{
+	position: relative;
+
+	top: 15px;
+}
+
+.code-box{
+	position: relative;
+	width: 335px;
+	height: 50px;
+
+	border: 2px solid black;
+	border-radius: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+
+	word-break: break-word;
+	overflow-y: scroll;
+}
+
+.submit-code-button{
+	position: relative;
+	float: right;
+	right: 5px;
+}
+
+.main-popup{
+	position: absolute;
+
+	top: 30px;
+	left: 70px;
+
+	width: 1160px;
+	height: 590px;
+
+	/*border: 1px solid red;*/
+}
+
+.background-popup{
+	position: absolute;
+	
+	width: 1160px; 
+	height: 590px; 
+}
+
+.players-time-score-popup{
+	position: relative;
+
+	width: 1010px;
+	height: 470px;
+
+	top: 50%; left: 50%;
+  	transform: translate(-50%,-50%);
+
+	text-align: center;
+
+	/*border: 2px solid black;*/
+}
+
+.player-popup{
+	position: relative;
+
+	display: inline-block;
+
+	width: 300px;
+	height: 470px;
+
+	vertical-align: top;
+
+	/*left: 2px;*/
+}
+
+.card-image-frame-popup{
+	position: relative;
+
+	width: 300px;
+	height: 420px;
+}
+
+.card-image-background{
+	position: relative;
+
+	width: 300px;
+	height: 420px;
+}
+
+.playerid-frame-popup{
+	position: relative;
+
+	width: 300px;
+	height: 50px;
+
+	line-height: 50px;
+
+	text-align: center;
+	overflow-x: auto;
+
+	font-size: 20pt;
+	font-weight: bold;
+}
+
+.time-score-popup{
+	position: relative;
+
+	display: inline-block;
+
+	width: 400px;
+	height: 420px;
+
+	vertical-align: top;
+}
+
+.time-popup{
+	position: relative;
+
+	width: 400px;
+	height: 50px;
+
+	line-height: 50px;
+	text-align: center;
+
+	/*border: 2px solid black;*/
+
+	font-size: 20pt;
+	font-weight: bold;
+}
+
+.score-popup{
+	position: relative;
+
+	width: 400px;
+	height: 360px;
+
+	padding-bottom: 10px;
+}
+
+.player-score-popup{
+	position: relative;
+
+	display: inline-block;
+
+	width: 195px;
+	height: 360px;
+
+	/*border: 1px solid black;*/
+	border-radius: 5px;
+}
+
+.user-full-score-popup{
+	position: relative;
+
+	width: 195px;
+	height: 200px;
+
+	color: green;
+
+	line-height: 200px;
+
+	text-align: center;
+
+	/*border: 2px solid black;*/
+
+	font-size: 70pt;
+	font-weight: bold;
+}
+
+.opp-full-score-popup{
+	position: relative;
+
+	width: 195px;
+	height: 200px;
+
+	color: red;
+
+	line-height: 200px;
+
+	text-align: center;
+
+	/*border: 2px solid black;*/
+
+	font-size: 70pt;
+	font-weight: bold;
+}
+
+.player-original-score-popup{
+	position: relative;
+
+	width: 195px;
+	height: 160px;
+
+	/*line-height: 40px;*/
+
+	text-align: center;
+
+	/*border: 2px solid black;*/
+
+	font-size: 30pt;
+}
+
+.level-image-frame-popup{
+	position: relative;
+
+	width: 400px;
+	height: 50px;
+
+	/*border: 2px solid black;*/
+}
+
+.level-image-popup{
+	position: relative;
+
+	width: 200px;
+	height: 50px;
+}
