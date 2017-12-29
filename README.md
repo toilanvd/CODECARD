@@ -9,3 +9,5 @@ To retrieve a problem with multiple zip parts, use: cat problemid.zip.part* > pr
 To run, use: node algorithm_server.js
 
 Before run, change ip and port in file "algorithm_server.js" and change mysql database, user, password in file "action.js". Also you have to change ip and port in all js and html file.
+
+Download necessary NodeJS packages in "package.json" file using NPM.
